@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lesson design and lesson development &mdash; CodeRefinery instructor training  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/mystnb.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_lesson.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_rtd_theme_ext_color_contrast.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/togglebutton.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/minipres.js"></script>
+        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Practicing teaching and feedback" href="../06-teaching/" />
+    <link rel="prev" title="Organize a CodeRefinery workshop" href="../04-running-workshops/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../" class="icon icon-home" alt="Documentation Home"> CodeRefinery instructor training
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">The lesson</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../00-preparation/">Pre-workshop preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01-intro/">Welcome and introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-teaching-philosophies/">CodeRefinery teaching philosophies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-teaching-style/">The Carpentries and CodeRefinery approaches to teaching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04-running-workshops/">Organize a CodeRefinery workshop</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lesson design and lesson development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#backwards-lesson-design">Backwards lesson design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contributing-to-existing-lessons">Contributing to existing lessons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-new-teaching-material">Creating new teaching material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#technical-aspects">Technical aspects</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../06-teaching/">Practicing teaching and feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07-future/">Future</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quick-reference/">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/">Instructor’s guide</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery instructor training</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Lesson design and lesson development</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/coderefinery/content/blob/master/05-lesson-design.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lesson-design-and-lesson-development">
+<h1>Lesson design and lesson development<a class="headerlink" href="#lesson-design-and-lesson-development" title="Permalink to this headline">¶</a></h1>
+<p>In this episode we first discuss <strong>backwards lesson design</strong>, then we go over a
+process of <strong>contributing to existing lessons</strong> (that’s easier and is done more often).
+Then, the process of <strong>creating new lessons</strong>.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="#backwards-lesson-design">Backwards lesson design</a></p></li>
+<li><p><a class="reference external" href="#contributing-to-existing-lessons">Contributing to existing lessons</a></p></li>
+<li><p><a class="reference external" href="#creating-new-teaching-material">Creating new teaching material</a></p></li>
+<li><p><a class="reference external" href="#technical-aspects">Technical aspects</a></p></li>
+</ul>
+<div class="admonition-recommended-reading prereq admonition">
+<p class="admonition-title">Recommended reading</p>
+<p>We will extensively refer to the CodeRefinery <a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/lesson-design.md">lesson-design</a>
+manual
+and the <a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/lesson-review.md">lesson-review</a> checklist.</p>
+<p>We also use and recommend to read <a class="reference external" href="https://cdh.carpentries.org">The Carpentries Curriculum Development Handbook</a>.</p>
+</div>
+<div class="section" id="backwards-lesson-design">
+<h2>Backwards lesson design<a class="headerlink" href="#backwards-lesson-design" title="Permalink to this headline">¶</a></h2>
+<p>Previously, we’ve talked about the general concept of how to design
+lessons to match learners.  Here, we will go through a practical
+process.</p>
+<p>The basic idea is called <strong>backwards lesson design</strong>.</p>
+<ul class="simple">
+<li><p>You don’t think about how to do something and try to explain it.</p></li>
+<li><p>Avoid the typical approach <em>“I want to show a number of things which I think are cool about
+tool X - how do I press these into 90 minutes?”</em></p></li>
+<li><p>Instead, you start with <strong>learner personas</strong>, and think of what is
+<strong>useful to them</strong>: <em>“What do I want them to be able to remember/understand/apply/analyze/evaluate/create?”</em>.
+Then, you create a sequence of exercises which test
+incrementally progressing tasks.</p></li>
+<li><p>Then, you write the minimum amount
+of material to teach the gap between exercises.</p></li>
+</ul>
+<p>Why is it good to have a process?:</p>
+<ul class="simple">
+<li><p>Having a semi-rigid design process <strong>saves time</strong> (hopefully).</p></li>
+<li><p>It can increase quality.</p></li>
+<li><p>It will probably increase relevance of lessons for learners.</p></li>
+<li><p><strong>We aren’t perfect yet.</strong>  CodeRefinery is still striving to get
+better at this, and we are more ad-hoc than you might think.
+A number of our lessons have not been designed this way but we are now improving
+these lessons with the backwards lesson design in mind.</p></li>
+</ul>
+<p>The whole process (copied from
+<a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/lesson-design.md">lesson-design</a>)
+is:</p>
+<ol class="simple">
+<li><p>Brainstorm what you want to cover.</p></li>
+<li><p>Create or reuse learner personas - understand who you want to
+teach.  What do they care about?  Perhaps as important is what they
+don’t care about: make sure that you don’t go too in depth too
+early and turn people off.</p></li>
+<li><p>Create some summative assessments, that show what learners should
+learn by the end.  Try to connect these to the learner personas.</p></li>
+<li><p>Create formative assessments (exercises) that let the learners
+practice what you want them to learn.  See below for hints on coming
+up with good exercises.  These should also connect to things the
+learners will actually do, but can also be more of checkpoints.</p></li>
+<li><p>Put exercises in a logical order, and fill in any gaps.  Ideally
+there should be 15-20 min of teaching between each exercise.  Perhaps
+most are short (a few longer examples as needed), to identify a
+certain learning goal and misconception.</p></li>
+<li><p>Write just enough material to get from one exercise to the other.</p></li>
+</ol>
+<p>When designing exercises, consider that some participants will get stuck
+and may want to re-join at a later exercise. In other words it is nice
+if exercises build up on each other but not at the cost that if participants
+get stuck at exercise 2, they will not be able to do exercises 3 to N.</p>
+<div class="admonition-practice-backwards-design challenge admonition">
+<p class="admonition-title">Practice backwards design</p>
+<p>Choose a simple lesson topic and apply backwards lesson design.  You
+won’t get all the way through, but come up with a logical
+progression of exercises.</p>
+<p>Some suggestions:</p>
+<ul class="simple">
+<li><p>Regular expressions</p></li>
+<li><p>Making papers in LaTeX</p></li>
+<li><p>Making figures in your favorite programming language</p></li>
+<li><p>Linux shell basics</p></li>
+<li><p>Something non-technical, such as painting a room</p></li>
+<li><p>An instructor training for CodeRefinery</p></li>
+<li><p>Some aspect from an already existing lesson</p></li>
+<li><p>A lesson you always wanted to teach</p></li>
+<li><p>A lesson you plan to teach this autumn (maybe independently of Carpentries and CodeRefinery)</p></li>
+</ul>
+<p>Exercise (30 minutes):</p>
+<ul class="simple">
+<li><p>Collect notes in a shared document.</p></li>
+<li><p>Start with learner personas and learning outcomes.</p></li>
+<li><p>Come up with a logical progression of exercises.</p></li>
+</ul>
+<p>Discussion (15 minutes):</p>
+<ul class="simple">
+<li><p>How does this approach compare to other lessons or courses you have designed?</p></li>
+<li><p>We read, compare, and discuss our notes.</p></li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="contributing-to-existing-lessons">
+<h2>Contributing to existing lessons<a class="headerlink" href="#contributing-to-existing-lessons" title="Permalink to this headline">¶</a></h2>
+<p>Our lessons are <strong>collaboratively developed</strong>.  They are made by many
+people, and there is no single fixed master plan (but there should be,
+in the instructors or maintainer’s guide).  We encourage
+everyone to contribute to the lessons.</p>
+<p>Lessons are reviewed very often - essentially, before each workshop by
+the instructor of that workshop.  This can be a quick review, looking
+at issues and fixing easy things, or more thorough.</p>
+<p>Every so often (such as at this training), there is an extensive
+hackathon period of fully revising a lesson and making major improvements.</p>
+<p>We’ve made the <a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/lesson-review.md">lesson-review</a> checklist
+to guide the review process.</p>
+<div class="admonition-discussion discussion admonition">
+<p class="admonition-title">Discussion</p>
+<p>We now go to the
+<a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/lesson-review.md">lesson-review</a>
+checklist and discuss it, instead of duplicating things here.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="creating-new-teaching-material">
+<h2>Creating new teaching material<a class="headerlink" href="#creating-new-teaching-material" title="Permalink to this headline">¶</a></h2>
+<p>Creating new teaching material is a longer process, because you should
+go through the whole backwards lesson design process and get extensive
+comments.  Still, don’t feel afraid: nothing is perfect (or even good)
+the first time. In fact, <strong>it may be an advantage to share an imperfect
+lesson with others early</strong> to collect feedback and suggestions before the lesson
+“solidifies” too much. Draft it and collect feedback. The result will probably
+be better than working in isolation towards a “perfect” lesson.</p>
+<p>We should use the backwards lesson design process, mentioned above.  This is
+extensively discussed in the chapter <a class="reference external" href="https://teachtogether.tech/#s:process">“A lesson design process”</a>
+of the book “Teaching Tech Together”, but we have a
+shorter summary for quicker reference and discussion in the CodeRefinery
+<a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/lesson-design.md">lesson-design</a> manual.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="technical-aspects">
+<h2>Technical aspects<a class="headerlink" href="#technical-aspects" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>All lessons are public and open <a class="reference external" href="https://github.com/coderefinery">repositories on GitHub</a>.</p></li>
+<li><p>Make issues and pull requests about ideas and improvements.</p></li>
+<li><p>For substantial changes we recommend to first open an issue and describe your
+idea and collect feedback before you start with an extensive rewrite.</p></li>
+<li><p>If you see an open pull request, don’t be afraid to comment and merge!</p></li>
+<li><p>Avoid merging own pull requests.</p></li>
+<li><p>For things still under construction, open a draft pull request to collect
+feedback and to signal to others what you are working on.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_episodes/</span></code> contains the markdown files of each episode, which get
+automatically assembled.  There is YAML metadata at the top of
+each.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">index.md</span></code> is the main page, <code class="docutils literal notranslate"><span class="pre">guide.md</span></code> is the instructor’s guide,
+and <code class="docutils literal notranslate"><span class="pre">reference.md</span></code> is the learner’s reference guide.</p></li>
+<li><p>To get started with new lessons, we recommend to <a class="reference external" href="https://github.com/coderefinery/example-lesson/generate">generate a
+copy</a> from the
+example <a class="reference external" href="https://github.com/coderefinery/example-lesson">lesson template</a>.</p></li>
+<li><p>After creating the new lesson repository, adapt <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>.</p></li>
+</ul>
+<p>Note that most lessons and the
+<a class="reference external" href="https://github.com/coderefinery/example-lesson">lesson template</a> contain the
+repository <a class="reference external" href="https://github.com/coderefinery/jekyll-common">jekyll-common</a> as
+Git submodule.  We do this to have one repository with common layout and
+styling and to make it relatively easy to update lesson repositories after
+layout or styling changes.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../06-teaching/" class="btn btn-neutral float-right" title="Practicing teaching and feedback" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../04-running-workshops/" class="btn btn-neutral float-left" title="Organize a CodeRefinery workshop" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, The contributors
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

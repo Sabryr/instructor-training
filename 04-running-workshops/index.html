@@ -1,0 +1,486 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Running a workshop &mdash; CodeRefinery instructor training  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/mystnb.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_lesson.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_rtd_theme_ext_color_contrast.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/togglebutton.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/minipres.js"></script>
+        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Lesson design" href="../lesson-design/" />
+    <link rel="prev" title="Interactive teaching style" href="../03-teaching-style/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../" class="icon icon-home" alt="Documentation Home"> CodeRefinery instructor training
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">The lesson</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../00-preparation/">Pre-workshop preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/">Welcome and introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about-coderefinery/">About the CodeRefinery project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-teaching-philosophies/">CodeRefinery teaching philosophies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-teaching-style/">Interactive teaching style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-teaching-style/#the-carpentries-and-coderefinery-approaches-to-teaching">The Carpentries and CodeRefinery approaches to teaching</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Running a workshop</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#arranging-the-workshop">Arranging the workshop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preparing-for-the-workshop">Preparing for the workshop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-the-workshop">Running the workshop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#online-procedures">Online procedures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lessons-learned-from-our-online-mega-coderefinery-workshop">Lessons learned from our online Mega-CodeRefinery workshop</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#case-study-mega-coderefinery-and-finland-hpc-kickstart">Case study: Mega-CodeRefinery and Finland HPC Kickstart</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#main-differences-with-mega-online">Main differences with mega-online</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#key-adaption-mechanisms">Key adaption mechanisms</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../lesson-design/">Lesson design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lesson-development/">Collaborative lesson development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06-teaching/">Practicing teaching and feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07-future/">Future</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coderefinery-workshops/">Organize a CodeRefinery workshop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quick-reference/">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/">Instructor’s guide</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery instructor training</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Running a workshop</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/coderefinery/content/blob/master/04-running-workshops.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="admonition-workshop-manuals callout admonition">
+<p class="admonition-title">Workshop manuals</p>
+<p>CodeRefinery maintains a number of <a class="reference external" href="https://github.com/coderefinery/manuals/">workshop manuals</a>
+with most of the “primary” information.  This episode condenses this
+into a quick overview.</p>
+</div>
+<div class="section" id="running-a-workshop">
+<h1>Running a workshop<a class="headerlink" href="#running-a-workshop" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="arranging-the-workshop">
+<h2>Arranging the workshop<a class="headerlink" href="#arranging-the-workshop" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-manuals-link callout admonition">
+<p class="admonition-title">Manuals link</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/workshop-administration.md#before-the-workshop">before the
+workshop</a></p></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p>Select a coordinator, recruit instructors (at least 3 is important),
+find helpers</p></li>
+<li><p>Find a good lecture room:
+<a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/workshop-requirements-inperson.md">requirements</a></p></li>
+<li><p>Set up workshop webpage using the [Github, template
+repository](https://github.com/coderefinery/template-workshop-webpage]:
+<a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/workshop-administration.md#set-up-workshop-page">see
+manuals</a></p></li>
+<li><p>Advertising the workshop</p></li>
+<li><p>Communication with registered participants</p></li>
+</ul>
+</div>
+<div class="section" id="preparing-for-the-workshop">
+<h2>Preparing for the workshop<a class="headerlink" href="#preparing-for-the-workshop" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Train helpers:
+<a class="reference external" href="https://github.com/coderefinery/manuals/#helper-training">manuals</a>.
+Good helpers can make a big difference.</p></li>
+<li><p>Get participants ready</p>
+<ul>
+<li><p>Right equipment</p></li>
+<li><p>Right mindset</p></li>
+<li><p>Installation help in advance!</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="running-the-workshop">
+<h2>Running the workshop<a class="headerlink" href="#running-the-workshop" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Mostly nothing specific to CodeRefinery here, but we have many of
+our own checklists:</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/presenting.md">in-class
+checklist</a></p></li>
+<li><p><a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/helping-and-teaching.md">helping and teaching</a></p></li>
+</ul>
+</li>
+<li><p>Online workshop have their own checklists (more below):</p></li>
+</ul>
+</div>
+<div class="section" id="online-procedures">
+<h2>Online procedures<a class="headerlink" href="#online-procedures" title="Permalink to this headline">¶</a></h2>
+<p>Main article: <a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/online-training.md">Online training manual</a></p>
+<p>For the obvious reason in March 2019, we transitioned to online
+workshops.</p>
+<ul class="simple">
+<li><p>We have less interaction with learners</p></li>
+<li><p>We can reach many more people at once</p></li>
+<li><p>You can’t just move things straight to online: it actually requires
+thinking about it.  Details at the bottom.</p></li>
+<li><p>Zoom</p>
+<ul>
+<li><p>Not the most ethical platform, but worked quickly and has good
+features for group work.</p></li>
+<li><p><a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/zoom-mechanics.md">Zoom mechanics: instructions for
+students</a>.</p></li>
+<li><p>Being able to divide people into breakout rooms is a key point to
+scale to many people</p></li>
+<li><p>Breakout room helpers need training: <a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/breakout-rooms-groups-help.md">Helpers managing breakout rooms</a></p></li>
+</ul>
+</li>
+<li><p>HackMD</p>
+<ul>
+<li><p>Online “collaborative notes”</p></li>
+<li><p>HackMD is alternative to Google Docs</p></li>
+</ul>
+</li>
+<li><p>We found that it takes about the same amount of time as in-person,
+but you much longer breaks and much less per day. (5 min too short,
+15-20 min best.  Max 3-4h/day.)</p></li>
+</ul>
+</div>
+<div class="section" id="lessons-learned-from-our-online-mega-coderefinery-workshop">
+<h2>Lessons learned from our online Mega-CodeRefinery workshop<a class="headerlink" href="#lessons-learned-from-our-online-mega-coderefinery-workshop" title="Permalink to this headline">¶</a></h2>
+<p>In May 2020, we have a “mega-workshop” online: 150 people registered,
+120 were accepted, and our audience was around 90-100 each day.</p>
+<p>The workshop <em>did</em> work well, and required preparation but not so much
+more than an in person or online workshop of 20-30 people.</p>
+<p>However, you <em>have</em> to think about it differently and prepare
+appropriately.</p>
+<div class="admonition-online-workshop-differences discussion admonition">
+<p class="admonition-title">Online workshop differences</p>
+<p>What do you think you have to do differently for a massive online
+workshop.  Answer in the collaborative document / discuss in
+breakout rooms.</p>
+<ol class="simple">
+<li><p>What are the possible problems/disadvantages?</p></li>
+<li><p>What are the advantages?</p></li>
+<li><p>How do you have to prepare differently?</p></li>
+<li><p>What is your experience with online teaching?</p></li>
+</ol>
+</div>
+<div class="section" id="case-study-mega-coderefinery-and-finland-hpc-kickstart">
+<h3>Case study: Mega-CodeRefinery and Finland HPC Kickstart<a class="headerlink" href="#case-study-mega-coderefinery-and-finland-hpc-kickstart" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Mega-CodeRefinery</p>
+<ul>
+<li><p>Audience of around 90-100</p></li>
+<li><p>“bring your own breakout room” (see below)</p></li>
+<li><p>3 days/week, 6 days total</p></li>
+<li><p>Lessons as normal in CodeRefinery</p></li>
+</ul>
+</li>
+<li><p>HPC Kickstart</p>
+<ul>
+<li><p>250 registered, ~180 max participants</p></li>
+<li><p>Multi-university: local differences made this much harder to manage.</p></li>
+<li><p>Breakout</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="main-differences-with-mega-online">
+<h2>Main differences with mega-online<a class="headerlink" href="#main-differences-with-mega-online" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Less tolerance for problems</p></li>
+<li><p>More diversity in skill levels</p></li>
+</ul>
+<div class="section" id="key-adaption-mechanisms">
+<h3>Key adaption mechanisms<a class="headerlink" href="#key-adaption-mechanisms" title="Permalink to this headline">¶</a></h3>
+<p>This will be later published in a final report</p>
+<ul class="simple">
+<li><p>Breakout rooms</p>
+<ul>
+<li><p>Consistent members over sessions and days - form community</p></li>
+<li><p>Requires Zoom naming like “(4) First Last”, so that rooms can be
+managed efficiently.</p></li>
+</ul>
+</li>
+<li><p>Teams</p>
+<ul>
+<li><p>Teams adapt tools better when there are multiple adopters.</p></li>
+<li><p>Offer team registrations</p></li>
+<li><p>Bring your own helper: “bring your own breakout room”</p></li>
+<li><p>Anyone bringing own helper can be accepted</p></li>
+<li><p>Must already be considered at the registration phase!</p></li>
+</ul>
+</li>
+<li><p>Helpers</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/coderefinery/manuals/blob/master/breakout-rooms-helping.md">Helper training for breakout
+rooms</a></p></li>
+<li><p>“helper sessions” - two the previous week, expect all helpers to
+attend at least one to learn about what to do</p></li>
+<li><p>Recommend make these sessions 60 minutes, prepare a lesson which
+demonstrates all the main tech and also preparation</p></li>
+<li><p>Helpers: stay in each room consistently</p></li>
+<li><p>Expert helpers: move between rooms, make sure things stay on track.</p></li>
+</ul>
+</li>
+<li><p>Installation help</p>
+<ul>
+<li><p>Two installation help sessions the week before</p></li>
+<li><p>Expect everyone to attend one, otherwise you are on your own.</p></li>
+<li><p>Right after the “helper intro sessions” - helpers stay and give
+install help.</p></li>
+</ul>
+</li>
+<li><p>HackMD: Asking questions during the workshop</p>
+<ul>
+<li><p>Most questions asked via collaborative notes, not by voice.</p></li>
+<li><p>Voice still allowed.</p></li>
+<li><p>This provides a safer way for most people to ask questions - and
+without interrupting the flow</p></li>
+<li><p>And multiple people can answer, asynchronously</p></li>
+<li><p>Beware: don’t go too in-depth.</p></li>
+<li><p>Always write at the every bottom (only one palace needs to be watched)</p></li>
+<li><p>HackMD worked even with the 180-person workshop.  We recommend
+keeping the length short, and having people switch to view mode if
+more than 50 people.</p></li>
+</ul>
+</li>
+<li><p>Recording</p>
+<ul>
+<li><p>With 100 people, main room is already quite silent, thus we lose
+less by recording.</p></li>
+<li><p>Collaborative notes provide a way to ask questions other than
+voice which would be recorded.</p></li>
+<li><p>Breakout rooms never recorded.</p></li>
+</ul>
+</li>
+<li><p>Lesson adjustments</p>
+<ul>
+<li><p>Make breakout sessions as long as possible: effectively, assume 5
+minutes overhead each time you start a breakout session.</p></li>
+<li><p>Don’t combine breaks and breakout time</p></li>
+<li><p>Be very clear about exercise expectations: write down end time,
+expected outcomes, links for exercises.  “Meta-talk”: the more,
+the better.</p></li>
+<li><p>Also discuss overall expectations: more people will be both
+overwhelmed and underwhelmed.  Set expectations right: is this
+basic or advanced?</p></li>
+</ul>
+</li>
+<li><p>Roles:</p>
+<ul>
+<li><p>Zoom host (Zoom tech, watches chat)</p></li>
+<li><p>HackMD master (watches, answers questions, organizes)</p></li>
+<li><p>Instructors</p></li>
+<li><p>Helpers</p></li>
+<li><p>Expert helpers</p></li>
+<li><p>All of these should be different, even if in practice everyone
+does a bit of everything!  Otherwise cognitive load becomes too
+much.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../lesson-design/" class="btn btn-neutral float-right" title="Lesson design" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../03-teaching-style/" class="btn btn-neutral float-left" title="Interactive teaching style" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, The contributors
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
